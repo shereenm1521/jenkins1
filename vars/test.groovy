@@ -18,8 +18,8 @@ def call(){
         }
         stage('start nginx') {
             steps {
-                sh "sudo systemctl nginx enable"
-                 sh "sudo systemctl nginx start"
+                sh "sudo systemctl enable nginx"
+                 sh "sudo systemctl start nginx"
             }    
         }
        stage('test nginx') {
